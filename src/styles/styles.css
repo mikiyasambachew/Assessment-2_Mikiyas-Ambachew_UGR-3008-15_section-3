@@ -1,0 +1,263 @@
+:root {
+  --logo: rgb(193, 126, 2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: rgba(44, 47, 44, 0.834);
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+.header-slogan {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+.logoh1 {
+  margin: 0 0 30px;
+}
+.logo {
+  font-size: 4rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.logo > span {
+  font-size: 4.5rem;
+  color: rgb(232, 155, 12);
+}
+.header-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.header-link {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  background: rgb(1, 163, 1);
+  border-radius: 7px;
+  transition: background 0.3s;
+}
+.header-link:hover {
+  background: rgb(5, 108, 5);
+}
+.active {
+  background: rgb(225, 147, 2);
+}
+.active:hover {
+  background: rgb(195, 127, 2);
+}
+main {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 50px auto;
+}
+.main {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  font-size: 0.9rem;
+}
+aside {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 1rem;
+  float: right;
+}
+.about-main {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.about-main p,
+span {
+  font-size: 0.9rem;
+}
+.about-main p {
+  color: rgb(80, 79, 79);
+}
+.main-articles {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main-articles p {
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+}
+.main-articles h2,
+.about-main-article h2,
+aside h2,
+.contact-main h2 {
+  color: rgb(7, 176, 7);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.about-main-article {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.side-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-articles > span,
+.about-main-article > span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.main-articles img {
+  height: 150px;
+  object-fit: cover;
+}
+.red-link {
+  color: rgb(248, 49, 49);
+}
+.green-link {
+  color: rgb(7, 176, 7);
+  text-decoration: underline;
+}
+.article-image {
+  width: 100%;
+}
+aside ul {
+  list-style: none;
+}
+aside ul li a {
+  text-decoration: none;
+  color: rgb(28, 27, 27);
+  font-size: 0.9rem;
+}
+aside span {
+  font-size: 0.9rem;
+}
+.bold {
+  font-weight: bold;
+}
+.contact-main {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-main p {
+  font-size: 0.9rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact-main h2 {
+  margin: 20px 0;
+}
+form label {
+  color: rgb(92, 90, 90);
+}
+form input {
+  padding: 10px 10px;
+}
+form button {
+  width: max-content;
+  padding: 7px 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+footer {
+  padding: 20px 0 0;
+  color: white;
+  background: rgba(31, 41, 31, 0.87);
+}
+.footer-articles-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  line-height: 1.3rem;
+}
+.footer-articles-container > article {
+  width: 25%;
+  overflow: hidden;
+  font-size: 0.7rem;
+}
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  gap: 15px;
+  align-items: stretch;
+}
+.images-container img {
+  width: 80%;
+  aspect-ratio: 1;
+}
+
+.about-image {
+  float: left;
+  margin-right: 10px;
+  width: 60px;
+  aspect-ratio: 1;
+}
+
+.addresses {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 15px;
+}
+.footer-link {
+  color: rgb(7, 176, 7);
+}
+.footer-articles-container h2 {
+  margin: 0 0 20px;
+}
+.copyright {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background: black;
+}
+.footer-links-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-links-container > a {
+  color: white;
+  text-decoration: none;
+}
+#copyactive {
+  color: rgb(7, 176, 7);
+}
